@@ -16,7 +16,7 @@ class Day1Test {
     """
     )
     fun addsBothNumbers() {
-        val testInput = intArrayOf(1721, 979, 366, 299, 675, 1456)
+        val testInput = listOf(1721, 979, 366, 299, 675, 1456)
         val solver = Day1()
         val actualResult = solver.solveExpenses(testInput, GOAL_SUM)
         actualResult shouldBe 514579
@@ -33,7 +33,7 @@ class Day1Test {
     """
     )
     fun returnMinusOneIfThereAreNotCoincidences() {
-        val testInput = intArrayOf(171, 939, 316, 259, 625, 16)
+        val testInput = listOf(171, 939, 316, 259, 625, 16)
         val solver = Day1()
         val actualResult = solver.solveExpenses(testInput, GOAL_SUM)
         actualResult shouldBe -1

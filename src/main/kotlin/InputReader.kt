@@ -1,1 +1,1 @@
-fun loadResource(filename: String) = {}::class.java.getResource(filename).readText()
+fun loadResource(filename: String) = {}::class.java.getResourceAsStream(filename).bufferedReader().readLines().map { it.toInt() }
