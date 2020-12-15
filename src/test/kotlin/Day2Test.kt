@@ -36,5 +36,21 @@ class Day2Test {
         result shouldBe 0
     }
 
+    @Test
+    @DisplayName(
+        """
+        Given a list of passwords and policy position
+        When checking the policy don't find any
+        Then it returns 0
+    """
+    )
+    fun returnHowManyPasswordsAreOkWithPolicyPosition() {
+        val actual = listOf(
+            "1-3 a: abcde", "1-3 b: cdefg", "2-9 c: ccccccccc"
+        )
+        val result = Day2().checkPasswordPolicyPosition(actual)
+        result shouldBe 1
+    }
+
 
 }
