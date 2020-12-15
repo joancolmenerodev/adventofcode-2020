@@ -36,7 +36,6 @@ class Day1 {
         var left: Int
         var right: Int
 
-
         for (index in 0..list.size - 2) {
             left = index + 1
             right = sortedList.size - 1
@@ -66,7 +65,7 @@ class Day1 {
 
 fun main() {
     val solver = Day1()
-    val input = loadResource("InputDay1.txt")
+    val input = loadResource("InputDay1.txt").map { it.toInt() }
     println(solver.solveExpenses(input, 2020))
     println(solver.solveThreeExpenses(input, 2020))
 }
